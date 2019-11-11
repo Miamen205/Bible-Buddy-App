@@ -1,0 +1,10 @@
+.YouTube { width: 100%; }
+li {
+  list-style: none;
+}
+.YouTube{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}

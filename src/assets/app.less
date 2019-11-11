@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(204,204,204,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(207,207,207,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(207,207,207,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(207,207,207,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(207,207,207,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(207,207,207,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(204,204,204,1) 0%, rgba(207,207,207,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#cfcfcf', GradientType=1 );
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(102,102,102,0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(102,102,102,0.5);
+  box-shadow: 0px 1px 5px 0px rgba(102,102,102,0.5);
+}
+
+.browse-options {
+  display: flex;
+  justify-content: center;
+}
+
+.browse-option {
+  float: left;
+  margin-right: 10px;
+}
+
+.results {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 10px;
+  text-align: left;
+}
+
+.content-in {
+  animation: fadeIn 800ms ease-in-out forwards;
+
+  h2 {
+    animation: slideInLeft 800ms ease-in forwards;
+  }
+
+  .verses {
+    animation: slideInRight 800ms ease-in forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

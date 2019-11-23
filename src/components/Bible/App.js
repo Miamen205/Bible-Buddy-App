@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { fetchChapter } from '../../api/biblenet.api.js';
-import books from '../../data/bible.books.info.obj.js';
-import BrowseOptions from './BrowseOptions';
-import BibleContent from './BibleContent';
+// import books from '../../data/bible.books.info.obj.js';
+// import BrowseOptions from './BrowseOptions';
+// import BibleContent from './BibleContent';
 import ColorPanel  from "../ColorPanel/ColorPanel";
 import SecondSidePanel  from "../SidePanel/SecondSidepanel";
 import "../App.css";
@@ -77,28 +77,32 @@ class Bible extends Component {
     const { onSelect,  onRequest } = this;
 
     return (
-      <div id="Bible-Page">
+      <div>
       <React.Fragment>
           <ColorPanel  />
           <SecondSidePanel />
         <header id="bible-content">
+        </header>
+          <center>
           <h1 id="Bible-Title">Your Bible </h1>
-          <BrowseOptions
+          <iframe id="Bible" src="https://www.bible.com"></iframe>
+          </center>
+          {/* <BrowseOptions
             selected={selected}
             onSelect={onSelect}
             onRequest={onRequest}
             books={books}
             className="browse-options"
             id="bible-content"
-          />
-        </header>
+          /> */}
+       
 
-        <BibleContent 
+        {/* <BibleContent 
           className="results content-in"
           dataResult={dataResult}
           loading={loading}
           id="bible-content"
-        />
+        /> */}
       </React.Fragment>
       </div>
     );

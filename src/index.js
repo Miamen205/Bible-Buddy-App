@@ -17,7 +17,9 @@ import rootReducer from './reducers';
 import { setUser, clearUser } from "./actions";
 import VideoChatRoute from "./video-chat-routes";
 import BookRoute from "./BookRoute";
-
+import CardRouter from './components/cardRouter';
+import NewTestament from "./components/CardQuiz/NewTestament";
+import OldTestament from "./components/CardQuiz/OldTestament";
 import 'semantic-ui-css/semantic.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -49,6 +51,9 @@ class Root extends React.Component {
         <Route path="/YouTube" component={YouTube} />
         <Route path="/videochat" component={VideoChatRoute} />
         <Route path="/bookstore" component={BookRoute} />
+        <Route path="/BibleGames" component={CardRouter} />
+        <Route path="/NewTestamentGames" component={NewTestament} />
+        <Route path="/OldTestamentGames" component={OldTestament} />
       </Switch>
     );
   }

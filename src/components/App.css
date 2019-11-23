@@ -136,10 +136,16 @@ text-align:  start;
 height: 72vh;
 overflow-y: scroll;
 }
-#Bible-Page{
-  background-image: url(https://proshots-2.s3.amazonaws.com/34a59df8b8570567264607e4f4a2a392890467e2c12e13a4b0c5b6195274d06d/1920x1080.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+#Bible{
+width: 1000px;
+height: 780px;
+margin: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+padding:60px;
 }
 
 #selected-chapter{

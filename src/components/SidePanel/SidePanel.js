@@ -34,6 +34,9 @@ class SidePanel extends React.Component {
            <Menu.Item>
         <h4><Link className="Side-Link" to="/YouTube"><Icon name="youtube"></Icon> Video Search</Link></h4>
         </Menu.Item>
+        <Menu.Item>
+        <h4><Link className="Side-Link" to="/BibleGames"><Icon name="card"></Icon> Bible Games</Link></h4>
+        </Menu.Item>
           {/* <Menu.Item>
         <h3><Link to="/videochat"><Icon name="group"></Icon>Buddy Video Chat</Link></h3>
           </Menu.Item> */}
